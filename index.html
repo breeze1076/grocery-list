@@ -18,23 +18,10 @@
       </div>
     </div>
   </nav>
-  <div class="container" ng-controller="GroceryListItemsController">
-    <div class="col-xs-12">
-      <ul class="list-group">
-        <li class="list-group-item text-center clearfix" ng-repeat="item in groceryItems">
-          <button type="button" class="btn btn-sm btn-success pull-left">
-            <span class="glyphicon glyphicon-unchecked"></span></button><span style="font-weight: bold;">
-            {{ item.itemName }}
-          </span>
-          <button type="button" class="btn btn-sm btn-default pull-right">
-            <span class="glyphicon glyphicon-pencil"></span>
-          </button>
-        </li>
-      </ul>
-    </div>
+  <div class="container" ng-view>
   </div>
 
-  <script src="lib/jquery-3.4.1.min.js"></script>
+  <script src=" lib/jquery-3.4.1.min.js"> </script>
   <script src="lib/bootstrap.min.js"></script>
   <script src="lib/angular.min.js"></script>
   <script src="lib/angular-route.min.js"></script>
